@@ -1,0 +1,27 @@
+.pagination{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 7px 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.pagination ul{
+    display: flex;
+    list-style: none;
+}
+.pagination ul li{
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 18px;
+    /* color: black; */
+}
+.pageNumber.active{
+    border: 1px solid rgba(171,170,174,255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(185, 185, 185);
+}

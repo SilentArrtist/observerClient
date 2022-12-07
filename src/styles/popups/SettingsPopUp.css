@@ -1,0 +1,151 @@
+.settingsWrapper{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+.settingsBody{
+    background:#fff;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(228, 228, 228);
+    display: flex;
+}
+.settingsNamesList{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.settingsNamesElement{
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.settingsNamesElement span{
+    font-size: 18px;
+}
+.settingsNamesElement.active{
+    background-color: rgb(111,92,195);
+}
+.settingsNamesElement.active span{
+    color: #fff;
+}
+.settingsList{
+    padding-top: 3%;
+    padding-left: 3%;
+    width: 75%;
+    height: 100%;
+    background-color: var(--settingBackgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.currentSetting{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.currentSettingTitle{
+    margin: 20px 0 0 20px;
+    font-size: 21px;
+    color: var(--textColor);
+}
+.settingBlock{
+    cursor: default;
+    background-color: rgb(231,230,237);
+    padding: 5px;
+    margin: 0 15px 15px 0;
+    border-radius: 10px;
+}
+.setting{
+    cursor: default;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+#changeOutputBlock{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.changeOutput_textBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#deleteElementBtn{
+    font-size:21px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(245, 38, 38);
+}
+#setting_title{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--textColor);
+}
+#settingsRadioBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#settingsRadioBlock span{
+    margin-bottom: 5px;
+}
+.radionBtn span{
+    padding-left: 5px;
+}
+#outputBlock{
+    display: flex;
+}
+#applyTextBtn{
+    margin: 5px 0;
+    padding: 5px;
+}
+/* Color pickers */
+.colorPickerBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colorPickerBlock label{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.colorPickerMultiply{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+#backgroundPicker, #borderPicker, #textPicker, #accentColorPicker, #settingsTextColorPicker, #dynamicBackgroundPicker, #dynamicBorderPicker, #dynamicTextPicker, #mainBackgroundPicker, #topBackgroundPicker{
+    cursor:default;
+    visibility: hidden;
+}
+p, span{
+    color: var(--textColor);
+}
+#resetSettings{
+    cursor: pointer;
+}
+#ApplySettingsBtn{
+    color: white;
+    background: red;
+    border: 1px solid red;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 15px 15px 0;
+}

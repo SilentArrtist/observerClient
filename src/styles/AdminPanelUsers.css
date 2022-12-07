@@ -1,0 +1,96 @@
+.adminPanelHeader{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 35px;
+}
+.adminPanelHeader_line{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.rolesBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgb(213, 213, 213);
+    padding: 0px 0;
+}
+.role{
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.role .roleName{
+    color: rgb(166,173,187);
+}
+.role.active .roleName{
+    color: rgb(53,70,101);
+    position: relative;
+}
+.role.active .roleName::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(149,135,210);
+    width: 160%;
+    height: 3px;
+    left: -30%;
+    bottom: -15px;
+}
+
+#adminSecondLine{
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+}
+#currentRole{
+    font-size: 24px;
+}
+.addBtnBlock{
+    padding: 7px 15px;
+    margin-left: 25px;
+    background: rgb(111,92,195);
+    border-radius: 8px;
+    color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+
+
+.usersBody{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgb(228, 228, 228);
+    margin: 0 40px 30px 40px;
+    padding: 10px;
+}
+.usersBody_titleLine{
+    display: flex;
+    padding: 15px 25px;
+    text-align: start;
+}
+.titleElem{
+    width: 100%;
+    color: rgb(174,181,194);
+}
+.lineElem{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.userOperation{
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.userOperation img{
+    width: 18px;
+    height: 22px;
+}

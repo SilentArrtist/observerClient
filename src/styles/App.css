@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: local('PoppinsRegular'),
+    url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: local('PoppinsMedium'),
+    url('../fonts/Poppins/Poppins-Medium.ttf');
+}@font-face {
+  font-family: 'PoppinsSemiBold';
+  src: local('PoppinsSemiBold'),
+    url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+:root{
+  --colorAccent:rgb(131,23,134);
+  --textColor:rgb(0, 0, 0);
+  --mainBackgroundColor:rgb(59, 59, 255);
+  --topMenuBackgroundColor:rgb(59, 59, 255);
+  --settingNamesBackgroundColor:rgb(226,225,229);
+  --settingBackgroundColor:#fff;
+}
+.App {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  background-color: var(--mainBackgroundColor);
+}

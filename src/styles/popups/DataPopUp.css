@@ -1,0 +1,58 @@
+#dataPopUp_body{
+    width: 1000px;
+    height: 600px;
+}
+.container{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5vh;
+    height: 50vh;
+    display: grid;
+    overflow: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.container.noConnection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputTypes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 5vh;
+    width: 100vh;
+}
+.selector{
+    width: 25vh;
+}
+.changeType{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.changeType::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -3px;
+    left: 0px;
+    background-color: black;
+    max-width: 100%;
+    width: 0%;
+}
+
+.changeType:hover::after{
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .2s all;
+    width: 100%;
+}

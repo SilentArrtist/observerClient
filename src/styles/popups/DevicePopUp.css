@@ -1,0 +1,52 @@
+#devicePopUp_body{
+    display: flex;
+    justify-content: center;
+}
+.device_popup_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+}
+#device_popUpBlock{
+    width: 100%;
+    height: 70%;
+    margin: 50px 10px;
+    padding: 0px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+.devices_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
+.device_btn{
+    margin: 5px 5px;
+    padding: 3px 10px;
+}
+.add_device_block{
+    display: flex;
+    width: 100%;
+    margin: 25px 0;
+    justify-content: center;
+}
+.addDevice_input{
+    padding: 5px 10px;
+}
+.add_btn{
+    padding: 3px 5px;
+    margin-left: 5px;
+}
+.noDevices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#noDevicesH1{
+    color: black;
+}

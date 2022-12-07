@@ -1,0 +1,17 @@
+@import url('./AdminPanelSidebar.css');
+@import url('./AdminPanelUsers.css');
+@import url('./popups/SettingsPopUp.css');
+.adminPanelWrapper{
+    width: 100%;
+    display: flex;
+    background-color: rgb(247, 247, 247);
+}
+
+.adminPanelBody{
+    font-family: 'PoppinsMedium';
+    min-height: 100vh;
+    width: 95%;
+    background:rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+}
